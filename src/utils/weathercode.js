@@ -18,7 +18,11 @@ const weathercode = (latitude, longitude, callback) => {
           body.current.temperature +
           " degrees out. It feels like " +
           body.current.feelslike +
-          " degrees out."
+          " degrees out. Visibility is "+
+          body.current.wind_speed + 
+          " km. Wind speed is equal to "+
+           body.current.wind_speed+
+          " km/h."
       );
     }
   });
